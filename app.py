@@ -8,7 +8,6 @@ tts = TTS(model_name)
 
 def text_to_speech(text: str, speaker_wav, language: str):
     tts.tts_to_file(text, speaker_wav=speaker_wav, language=language, file_path="output.wav")
-    # tts.tts_to_file(text=text, speaker=tts.speakers[0], language=language, file_path="output.wav")
     return 'output.wav'
 
 inputs = [gr.Textbox(label="Input", value="Hello!", max_lines=3),
