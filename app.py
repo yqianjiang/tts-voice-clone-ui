@@ -11,7 +11,7 @@ def text_to_speech(text: str, speaker_wav, language: str):
     # tts.tts_to_file(text=text, speaker=tts.speakers[0], language=language, file_path="output.wav")
     return 'output.wav'
 
-inputs = [gr.Textbox(label="Input", value="Personalized learning platform for students with learning differences: You could develop an AI-powered platform that uses adaptive learning algorithms to provide personalized learning experiences for students with learning differences such as dyslexia or ADHD. As a front-end developer, you could design and develop the user interface, while your background in psychology could inform the adaptive learning algorithms used by the platform.", max_lines=3),
+inputs = [gr.Textbox(label="Input", value="Hello!", max_lines=3),
           gr.Audio(Lable="Speaker Wav", source="microphone", type="filepath"), 
             gr.Radio(label="Language", choices=tts.languages, value="en")]
 outputs = gr.Audio(label="Output")
